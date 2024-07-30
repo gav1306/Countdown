@@ -5,6 +5,7 @@ export default function Player() {
   const name = useRef();
   const clickHandler = () => {
     setPlayerName(name.current.value);
+    playerName.current.value = " ";
   };
   return (
     <section id="player">
